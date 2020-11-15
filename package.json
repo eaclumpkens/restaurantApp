@@ -1,0 +1,24 @@
+{
+  "name": "restaurantapp",
+  "version": "1.0.0",
+  "description": "burger logger with MySQL, Node, Express, Handlebars and ORM following MVC design pattern; Node and MYSQL to query and route data; Handlebars to generate HTML",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eaclumpkens/restaurantApp.git"
+  },
+  "author": "eaclumpkens",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eaclumpkens/restaurantApp/issues"
+  },
+  "homepage": "https://github.com/eaclumpkens/restaurantApp#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "mysql": "^2.18.1"
+  }
+}
