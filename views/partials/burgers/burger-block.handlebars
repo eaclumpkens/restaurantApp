@@ -1,9 +1,19 @@
 <li>
 	{{name}}
+	
 
-	<button class="change-burger" data-id="{{id}}" data-newburger="{{devoured}}">
-		{{#if devoured}}EAT ME{{else}}ALL GONE{{/if}}
+	{{#if devoured}}
+	<button class="change-status btn btn-warning" data-id="{{id}}" data-newstate="0">
+		<img src="assets/img/open-mouth.png" alt="eat-icon">
+		<img src="assets/img/hamburger.png" alt="burger-icon">
 	</button>
+	{{/if}}
 
-	<button class="delete-burger" data-id="{{this.id}}">DELETE!</button>
+
+	{{#unless devoured}}
+	<button class="delete-burger btn btn-warning" data-id="{{id}}" data-newState="1">
+		<img src="assets/img/delete.png" alt="burger-icon">
+	</button>
+	{{/unless}}
+	
 </li>

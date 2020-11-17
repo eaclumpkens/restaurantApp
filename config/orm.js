@@ -1,3 +1,4 @@
+var express = require("express");
 var connection = require("../config/connection.js");
 
 function printQuestionMarks(num) {
@@ -17,7 +18,6 @@ function objToSql(ob) {
 
   for (var key in ob) {
     var value = ob[key];
-    // check to skip hidden properties
     if (Object.hasOwnProperty.call(ob, key)) {
 
       if (typeof value === "string" && value.indexOf(" ") >= 0) {
@@ -47,7 +47,7 @@ var orm = {
     var queryString = "INSERT INTO " + table;
 
     queryString += " (";
-    queryString += cols.toString();
+    queryString += cols;
     queryString += ") ";
     queryString += "VALUES (";
     queryString += printQuestionMarks(vals.length);

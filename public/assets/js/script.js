@@ -1,12 +1,11 @@
+$(document).ready(function($) {
 
-$(document).read(function() {
-
-    $(".change-burger").on("click", function(event) {
+    $(".change-status").on("click", function(event) {
       var id = $(this).data("id");
-      var newBurger = $(this).data("newburger");
+      var newState = $(this).data("newstate");
   
       var newEatState = {
-        devoured: newBurger
+        devoured: newState
       };
   
       $.ajax("/api/burgers/" + id, {
@@ -14,7 +13,7 @@ $(document).read(function() {
         data: newEatState
       }).then(
         function() {
-          console.log("changed to", newBurger);
+          console.log("changed to", newState);
           location.reload();
         }
       );
@@ -25,7 +24,6 @@ $(document).read(function() {
   
       var newBurger = {
         name: $("#burgerType").val().trim(),
-        // devoured: $("[name=devoured]:checked").val().trim()
       };
   
       $.ajax("/api/burgers", {
