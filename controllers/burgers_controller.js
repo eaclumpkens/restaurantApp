@@ -24,8 +24,8 @@ router.post("/api/burgers", function(req, res) {
 	});
   });
 
-router.put("/api/burgers/:id", function(req, res) {
-  	let id = "id";
+  router.put("/api/burgers/:id", function (req, res) {
+	let id = "id";
 	let idVal = req.params.id;
 	burger.update("devoured", true, id, idVal, function (result) {
 		if (result.changedRows === 0) {
