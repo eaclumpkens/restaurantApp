@@ -1,7 +1,7 @@
 var express = require("express");
 var exphbs = require("express-handlebars");
 
-var PORT = process.env.ORT || 8080;
+var PORT = process.env.PORT || 8080;
 var app = express();
 
 app.use(express.static("public"));

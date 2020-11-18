@@ -7,7 +7,7 @@ html {
   background: transparent;
 }
 
-/* HEADER */
+/* HEADERS */
 
 h1 {
   font-family: 'Modak', cursive;
@@ -15,12 +15,17 @@ h1 {
   margin-top: 3rem;
 }
 
+h2 {
+  background: #faebd7;
+  padding: 1rem;
+  border-radius: 5%;
+}
+
 /* BURGER FORM */
 
 .create-form {
   padding: 5px;
   margin: 5px;
-  background: aqua;
   }
     
   .form-group {
