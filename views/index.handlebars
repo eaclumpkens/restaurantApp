@@ -1,31 +1,39 @@
-<h1>Burger App</h1>
 
-<h2>Add a Burger to the Que</h2>
-<form class="create-form">
+<header class="row">
+  <h1 class="col-12">Hero Burger</h1>
+</header>
 
-  <div class="form-group">
-    <input type="text" id="burgerType" name="name" placeholder="burger name">
-    <button type="submit" class="btn btn-primary btn-lg">Add Burger</button>
-  </div>
+<div class= "form">
+  <h2>Add a Burger to the Que</h2>
 
-</form>
+  <form class="create-form">
 
-<h2>Ready to Eat</h2>
+    <div class="form-group">
+      <input type="text" id="burgerType" name="name" placeholder="burger name">
+      <button type="submit" class="btn btn-primary btn-lg">Add Burger</button>
+    </div>
 
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block devoured=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
+  </form>
+</div>
 
-<h2>Consumed</h2>
+<main>
+  <h2>Ready to Eat</h2>
 
-<ul>
-  {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/burger-block devoured=false}}
-    {{/if}}
-  {{/each}}
-</ul>
+  <ul class="row">
+    {{#each burgers}}
+      {{#unless devoured}}
+        {{> burgers/burger-block devoured=true}}
+      {{/unless}}
+    {{/each}}
+  </ul>
+
+  <h2>Consumed</h2>
+
+  <ul class="row">
+    {{#each burgers}}
+      {{#if devoured}}
+        {{> burgers/burger-block devoured=false}}
+      {{/if}}
+    {{/each}}
+  </ul>
+</main>
