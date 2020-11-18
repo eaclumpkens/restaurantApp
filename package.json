@@ -4,6 +4,7 @@
   "description": "burger logger with MySQL, Node, Express, Handlebars and ORM following MVC design pattern; Node and MYSQL to query and route data; Handlebars to generate HTML",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
