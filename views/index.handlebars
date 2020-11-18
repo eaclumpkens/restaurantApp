@@ -4,13 +4,16 @@
 </header>
 
 <div class= "form">
-  <h2>Add a Burger to the Que</h2>
+  <h2>Add to Que</h2>
 
   <form class="create-form">
 
-    <div class="form-group">
-      <input type="text" id="burgerType" name="name" placeholder="burger name">
-      <button type="submit" class="btn btn-primary btn-lg">Add Burger</button>
+    <div class="form-group row">
+      <div class="col-2"></div>
+      <input class="col-5" type="text" id="burgerType" name="name" placeholder="burger name">
+      <div class="col-1"></div>
+      <button type="submit" class="col-2 btn btn-primary btn-lg">Add Burger</button>
+      <div class="col-3"></div>
     </div>
 
   </form>
@@ -27,7 +30,7 @@
     {{/each}}
   </ul>
 
-  <h2>Consumed</h2>
+  <h2>Ready to Toss</h2>
 
   <ul class="row">
     {{#each burgers}}

@@ -1,16 +1,15 @@
 <li class="col-3">
 	{{name}}
 	
-
 	{{#if devoured}}
-	<button class="change-status btn btn-warning" data-id="{{id}}" data-newstate="0">
+	<button class=" col-5 change-status btn btn-warning" data-id="{{id}}" data-newstate="0">
 		<img src="./assets/img/eat-icon.png" alt="eat-icon">
 	</button>
 	{{/if}}
 
 
 	{{#unless devoured}}
-	<button class="delete-burger btn btn-warning col-6" data-id="{{id}}" data-newState="1">
+	<button class="col-5 delete-burger btn btn-warning" data-id="{{id}}" data-newState="1">
 		<img src="./assets/img/trash-icon.png" alt="trash-icon">
 	</button>
 	{{/unless}}
