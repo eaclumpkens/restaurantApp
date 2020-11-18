@@ -7,4 +7,4 @@ CREATE TABLE burgers (
     name VARCHAR(50),
     devoured BOOLEAN default false,
     PRIMARY KEY (id)
-);ß
+);
